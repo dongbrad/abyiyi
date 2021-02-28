@@ -1,0 +1,18 @@
+<xml>
+    <column>
+        <name>PB</name>
+        <identifier>*</identifier>
+        <startindex>3</startindex>
+        <endindex>8</endindex>
+        <regex>(.+?)</regex>
+        <executor>7</executor>
+    </column>
+    <column>
+        <name>PDDD</name>
+        <identifier>#</identifier>
+        <startindex>3</startindex>
+        <endindex>9</endindex>
+        <regex>(.+?)</regex>
+        <executor>7</executor>
+    </column>
+</xml>

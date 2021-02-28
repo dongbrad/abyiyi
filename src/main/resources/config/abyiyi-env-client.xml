@@ -5,7 +5,25 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
+<!--        <property name="mapperLocations" value="classpath*:/mybatis/*.xml"/>
+        <property name="configLocation" value="classpath*:mybatis-config.xml" />-->
     </bean>
+
+    <bean id ="sqlSessionTemplate" class ="com.abyiyi.tools.client.db.ExecuteSqlClient">
+        <constructor-arg index="0" ref ="sqlSessionFactory"/>
+    </bean>
+
+    <bean id ="transcationManger" class ="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="httpClientTemplate" class="com.abyiyi.tools.client.http.HttpClientTemplate">
+
+    </bean>
+
+
+
+
 
 
 </beans>

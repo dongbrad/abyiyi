@@ -1,0 +1,4 @@
+import com.dj.janino.demo1.EacProxy ;
+public static EacProxy createProxy() {
+#replaced#
+}
