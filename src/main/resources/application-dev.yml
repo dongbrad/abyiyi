@@ -32,6 +32,9 @@ spring:
       stat-view-servlet:
         enabled: true
         url-pattern: /druid/*
+  activiti:
+    process-definition-location-prefix: classpath*:/processes/
+
 
 
 #showSql
@@ -54,6 +57,8 @@ http:
   socketTimeout: 6000
 #空闲时间(用于定期清理空闲连接)
   maxIdleTime: 1
+
+
 
 
 
